@@ -197,22 +197,22 @@ local Library do
         ["RightAlt"]          = "RightAlt"
     }
 
-    local Themes = {
-		["Preset"] = {
-			["Background"] = FromRGB(12, 14, 12),           -- Nền chính: đen pha xanh rêu
-			["Border"] = FromRGB(28, 32, 28),               -- Viền
-			["Inline"] = FromRGB(30, 34, 30),               -- Giữa các phần tử
-			["Hovered Element"] = FromRGB(55, 62, 50),      -- Hover: nhấn xanh tươi
-			["Page Background"] = FromRGB(18, 20, 18),      -- Nền trang phụ
-			["Outline"] = FromRGB(65, 74, 60),              -- Outline
-			["Element"] = FromRGB(36, 42, 35),              -- Các khối giao diện
-			["Gradient"] = FromRGB(200, 240, 180),          -- Gradient nhẹ, xanh tươi
-			["Text"] = FromRGB(240, 245, 230),              -- Chữ sáng, hơi ngà
-			["Text Stroke"] = FromRGB(0, 0, 0),
-			["Placeholder Text"] = FromRGB(165, 175, 160),
-			["Accent"] = FromRGB(169, 242, 112)             -- 🎯 Matcha tươi
-		}
+local Themes = {
+    ["Preset"] = {
+        ["Background"]       = FromRGB(12, 8, 20),     -- Deep dark purple base
+        ["Border"]           = FromRGB(45, 25, 70),    
+        ["Inline"]           = FromRGB(25, 15, 45),    
+        ["Hovered Element"]  = FromRGB(100, 50, 160),   Bright purple on hover
+        ["Page Background"]  = FromRGB(18, 12, 28),    
+        ["Outline"]          = FromRGB(120, 70, 180),   
+        ["Element"]          = FromRGB(35, 20, 60),    
+        ["Gradient"]         = FromRGB(180, 100, 255),  Neon purple gradient accent
+        ["Text"]             = FromRGB(220, 190, 255),  Soft lavender text
+        ["Text Stroke"]      = FromRGB(0, 0, 0),
+        ["Placeholder Text"] = FromRGB(140, 100, 180),
+        ["Accent"]           = FromRGB(180, 80, 255)    Main vibrant purple accent
     }
+}
 
     Library.Theme = TableClone(Themes["Preset"])
 
