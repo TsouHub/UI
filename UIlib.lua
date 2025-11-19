@@ -2,8 +2,6 @@ if Library then
     Library:Unload()
 end
 
-local Library = {}
-
 local LoadTick = os.clock()
 
 local Library do
@@ -75,9 +73,9 @@ local Library do
         FadeSpeed = 0.2,
 
         Folders = {
-            Directory = "Mouse Hub",
-            Configs = "Mouse Hub/Configs",
-            Assets = "Mouse Hub/Assets",
+            Directory = "MouseHub",
+            Configs = "MouseHub/Configs",
+            Assets = "MouseHub/Assets",
         },
 
         Images = {
@@ -197,22 +195,22 @@ local Library do
         ["RightAlt"]          = "RightAlt"
     }
 
-local Themes = {
-    ["Preset"] = {
-        ["Background"]       = FromRGB(20, 20, 20),      -- Clean dark gray
-        ["Border"]           = FromRGB(45, 45, 45),      
-        ["Inline"]           = FromRGB(35, 35, 35),      
-        ["Hovered Element"]  = FromRGB(70, 70, 70),      
-        ["Page Background"]  = FromRGB(25, 25, 25),      
-        ["Outline"]          = FromRGB(80, 80, 80),      
-        ["Element"]          = FromRGB(40, 40, 40),      
-        ["Gradient"]         = FromRGB(100, 150, 255),   -- Soft blue gradient
-        ["Text"]             = FromRGB(230, 230, 230),   -- Crisp white text
-        ["Text Stroke"]      = FromRGB(0, 0, 0),
-        ["Placeholder Text"] = FromRGB(150, 150, 150),
-        ["Accent"]           = FromRGB(0, 120, 255)      -- Classic Roblox blue accent
+    local Themes = {
+		["Preset"] = {
+			["Background"] = FromRGB(12, 14, 12),           -- Nền chính: đen pha xanh rêu
+			["Border"] = FromRGB(28, 32, 28),               -- Viền
+			["Inline"] = FromRGB(30, 34, 30),               -- Giữa các phần tử
+			["Hovered Element"] = FromRGB(55, 62, 50),      -- Hover: nhấn xanh tươi
+			["Page Background"] = FromRGB(18, 20, 18),      -- Nền trang phụ
+			["Outline"] = FromRGB(65, 74, 60),              -- Outline
+			["Element"] = FromRGB(36, 42, 35),              -- Các khối giao diện
+			["Gradient"] = FromRGB(200, 240, 180),          -- Gradient nhẹ, xanh tươi
+			["Text"] = FromRGB(240, 245, 230),              -- Chữ sáng, hơi ngà
+			["Text Stroke"] = FromRGB(0, 0, 0),
+			["Placeholder Text"] = FromRGB(165, 175, 160),
+			["Accent"] = FromRGB(169, 242, 112)             -- 🎯 Matcha tươi
+		}
     }
-}
 
     Library.Theme = TableClone(Themes["Preset"])
 
@@ -6237,6 +6235,3 @@ local Themes = {
         return SettingsPage
     end
 end
-
-getgenv().Library = Library
-return Library
