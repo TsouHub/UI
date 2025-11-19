@@ -199,18 +199,18 @@ local Library do
 
 local Themes = {
     ["Preset"] = {
-        ["Background"]       = FromRGB(12, 8, 20),     -- Deep dark purple base
-        ["Border"]           = FromRGB(45, 25, 70),    
-        ["Inline"]           = FromRGB(25, 15, 45),    
-        ["Hovered Element"]  = FromRGB(100, 50, 160),   Bright purple on hover
-        ["Page Background"]  = FromRGB(18, 12, 28),    
-        ["Outline"]          = FromRGB(120, 70, 180),   
-        ["Element"]          = FromRGB(35, 20, 60),    
-        ["Gradient"]         = FromRGB(180, 100, 255),  Neon purple gradient accent
-        ["Text"]             = FromRGB(220, 190, 255),  Soft lavender text
+        ["Background"]       = FromRGB(20, 20, 20),      -- Clean dark gray
+        ["Border"]           = FromRGB(45, 45, 45),      
+        ["Inline"]           = FromRGB(35, 35, 35),      
+        ["Hovered Element"]  = FromRGB(70, 70, 70),      
+        ["Page Background"]  = FromRGB(25, 25, 25),      
+        ["Outline"]          = FromRGB(80, 80, 80),      
+        ["Element"]          = FromRGB(40, 40, 40),      
+        ["Gradient"]         = FromRGB(100, 150, 255),   -- Soft blue gradient
+        ["Text"]             = FromRGB(230, 230, 230),   -- Crisp white text
         ["Text Stroke"]      = FromRGB(0, 0, 0),
-        ["Placeholder Text"] = FromRGB(140, 100, 180),
-        ["Accent"]           = FromRGB(180, 80, 255)    Main vibrant purple accent
+        ["Placeholder Text"] = FromRGB(150, 150, 150),
+        ["Accent"]           = FromRGB(0, 120, 255)      -- Classic Roblox blue accent
     }
 }
 
