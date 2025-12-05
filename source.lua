@@ -55,8 +55,8 @@ if old_March then
     Debris:AddItem(old_March, 0)
 end
 
-if not isfolder("Mouse Hub") then
-    makefolder("Mouse Hub")
+if not isfolder("Tech Hub") then
+    makefolder("Tech Hub")
 end
 
 local Connections = setmetatable({
@@ -271,7 +271,7 @@ local Config = setmetatable({
     save = function(self: any, file_name: any, config: any)
         local success_save, result = pcall(function()
             local flags = HttpService:JSONEncode(config)
-            writefile('Mouse Hub/'..file_name..'.json', flags)
+            writefile('Tech Hub/'..file_name..'.json', flags)
         end)
     
         if not success_save then
@@ -280,13 +280,13 @@ local Config = setmetatable({
     end,
     load = function(self: any, file_name: any, config: any)
         local success_load, result = pcall(function()
-            if not isfile('Mouse Hub/'..file_name..'.json') then
+            if not isfile('Tech Hub/'..file_name..'.json') then
                 self:save(file_name, config)
         
                 return
             end
         
-            local flags = readfile('Mouse Hub/'..file_name..'.json')
+            local flags = readfile('Tech Hub/'..file_name..'.json')
         
             if not flags then
                 self:save(file_name, config)
